@@ -1,0 +1,10 @@
+<p>please Enter Your Code</p>
+
+<form action="{% url 'account:verify' %}" method="post">
+    کد ارسالی را وارد کنید
+    {% csrf_token %}
+    <input type="text" name="token" maxlength="4" >
+    <button type="submit" value="save">
+        save
+    </button>
+</form>

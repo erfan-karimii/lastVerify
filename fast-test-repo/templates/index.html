@@ -1,0 +1,10 @@
+<form action="{% url 'account:send' %}" method='post'>
+    {% csrf_token %}
+    شماره را وارد کنید
+    <input type="text" name="phone">
+<button value="save" type="submit">
+save
+</button>
+</form>
+
+<a href="{% url 'account:resetpasswordsms' %}">ایا رمز خود را فراموش کرده اید؟</a>

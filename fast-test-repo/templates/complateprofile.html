@@ -1,0 +1,8 @@
+<form action="{% url 'account:complate' %}" method='post'>
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="نام خود را وارد کنید">
+    <input type='text' name='password' placeholder="رمز خود را وارد کنید">
+<button value="save" type="submit">
+save
+</button>
+</form>

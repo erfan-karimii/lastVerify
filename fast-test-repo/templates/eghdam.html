@@ -1,0 +1,8 @@
+<form action="{% url 'account:send2' %}" method='post'>
+    {% csrf_token %}
+شماره خود را وارد کنید
+    <input type="text" name="phone">
+<button value="save" type="submit">
+save
+</button>
+</form>
